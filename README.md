@@ -5,41 +5,41 @@
 
 Para iniciar a aplicação você pode executa **npm start** ou **yarn start**
 
-Após iniciar a aplicação, abre um **"menu"** deve ser inserido a opção desejada
-1 = CREATE ORDER or ADD ORDER ITEM or REMOVE ORDER ITEM or CHECKOUT ORDER
-2 = LIST ORDERS
-3 = LIST PRODUCTS
-
-ou "sair" para encerrar a aplicação.
-
-*  Criar pedido
-A entrada deve ser um objeto.
+Após iniciar a aplicação, abre um **"menu"** deve ser inserido a opção desejada  
+1 = CREATE ORDER or ADD ORDER ITEM or REMOVE ORDER ITEM or CHECKOUT ORDER  
+2 = LIST ORDERS  
+3 = LIST PRODUCTS  
+  
+ou "sair" para encerrar a aplicação.  
+  
+*  Criar pedido  
+A entrada deve ser um objeto.  
 exempo:
 ```
 { "action": "CREATE_ORDER", "order_id": 1 }
 ```
 
-*  Adicionar produto ao pedido
+*  Adicionar produto ao pedido  
 exempo:
 ```
 { "action": "ADD_ORDER_ITEM", "order_id": 1, "product_id": 1 }
 ```
 
-* Remover produto do pedido
+* Remover produto do pedido  
 exempo:
 ```
 { "action": "REMOVE_ORDER_ITEM", "order_id": 1, "product_id": 1 }
 ```
 
-*  Finalizar pedido
+*  Finalizar pedido  
 exempo:
 ```
 { "action": "CHECKOUT_ORDER", "order_id": 1 }
 ```
 
-* Operações simultâneas
-A entrada deve ser um array de objetos.
-
+* Operações simultâneas  
+A entrada deve ser um array de objetos.  
+  
 exempo:
 ```
 [{ "action": "CREATE_ORDER", "order_id": 1 },{ "action": "ADD_ORDER_ITEM", "order_id": 1, "product_id": 1 },{ "action": "CREATE_ORDER", "order_id": 2 },{ "action": "ADD_ORDER_ITEM", "order_id": 2, "product_id": 2 },{ "action": "CHECKOUT_ORDER", "order_id": 1 },{ "action": "CHECKOUT_ORDER", "order_id": 2 }]
