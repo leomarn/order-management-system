@@ -38,12 +38,3 @@ exempo:
 > ##  Executar os tests
 * Para executar testes na aplicação insira npm test ou yarn test
 
-> ##  Ferramentas utilizadas
-1 - typescript :
-Para poder utilizar o tipescript no projeto, pois ele é uma liguagem tipada e possibilida identificar de forma mais rápida os erros no código do projeto. 
-
-2 - ts-node
-Esse pacote é necessário para executar arquivos typescript no Node.js
-
-3 - @types/node
-Esse pacote server adicionar as definições de tipo para Node.js, por exemplo o "process", que foi necessário usar no projeto.
