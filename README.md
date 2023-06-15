@@ -1,6 +1,6 @@
 > ##  Realizar o build e a execução do projet
 *  Para instalar as depedências você pode executar
-*
+
       **npm install** ou **yarn**
 
 Para iniciar a aplicação você pode executa **npm start** ou **yarn start**
